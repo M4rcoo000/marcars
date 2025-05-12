@@ -16,40 +16,59 @@ html {
 
 body{
     margin: 20px;
-    background-color: grey;
+    background-color: black;
     color: rgb(253, 237, 226);
 }
 
 header {
-background-image: url("imgs/LogoCabezera.png");
+background-image: url("imgs/LogoCabezera2.png");
 position: relative;
 background-size: contain;
 background-repeat: no-repeat;
-background-position: center;
-height: 200px;
+background-position: top;
+
+min-height: 400px;
+top: 0.01px;
+position: sticky;
 
 
 
+}
+
+
+
+
+form{
+    width: 400px;
+    margin: 0 auto ;
+    padding: 18px;
+    background-color: rgb(153, 67, 11);
+    text-align: center;
+    border-radius: 5px;
+}
+form:hover{
+    cursor: pointer;
+    transition: 2s;
 }
 
 .milanuncios{
+
+    text-align: center;
+    color: rgb(153, 67, 11);
+    background-color:rgb(253, 237, 226);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-shadow: 3px 3px 5px rgb(44, 44, 44); 
     width: 200px;
     margin: 0 auto;
-    text-align: center;
-    color: rgb(153, 67, 11) ;
-background-color:rgb(253, 237, 226);
-margin: 20px;
-padding: 15px;
-text-decoration: none;
-Text-shadow: 3px 3px 5px black; 
 }
-
-form{
-
-    background-color: red;
-    background-size: auto;
-    margin: 15px ;
-text-align: center;
+.botonmilanuncios{
+    width: 600px;
+    margin: 0 auto; 
+    text-align: center;
+    padding: 150px;
 }
 
 .RRSS {
@@ -98,7 +117,44 @@ footer section{
     padding: 1rem;
 }
 
-footet p{ 
+footer p{ 
     margin: 0;
 }
 
+
+#preguntanos{
+    width: 200px;
+   margin: 0 auto; 
+   text-align: center;
+}
+#anuncDispon{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center; 
+}
+#impCompl{
+    width: 700px;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.coche1{
+    width: 700px;
+    margin: 0 auto ;
+    height: 700px;
+    padding: 18px;
+    background-color: rgb(153, 67, 11);
+    text-align: center;
+    border-radius: 5px;
+    overflow: scroll;
+}
+
+.trasera {
+    float: center;
+    overflow: scroll;
+}
+
+.delantera {
+    float: center;
+    overflow: scroll;
+}
