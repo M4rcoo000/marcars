@@ -36,8 +36,6 @@ position: sticky;
 }
 
 
-
-
 form{
     width: 400px;
     margin: 0 auto ;
@@ -51,24 +49,36 @@ form:hover{
     transition: 2s;
 }
 
-.milanuncios{
 
-    text-align: center;
-    color: rgb(153, 67, 11);
+.milanuncios {
+    display: inline-block;
+    padding: 15px 25px;
+    margin-top: 30px;
     background-color:rgb(253, 237, 226);
-    margin: 20px;
-    padding: 10px;
-    border-radius: 4px;
+    color: rgb(253, 237, 226);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     text-decoration: none;
-    text-shadow: 3px 3px 5px rgb(44, 44, 44); 
-    width: 200px;
-    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+    text-shadow: none;
 }
-.botonmilanuncios{
-    width: 600px;
-    margin: 0 auto; 
+
+.milanuncios:hover {
+    background-color: rgb(120, 52, 10);
+    color: rgb(253, 237, 226);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+
+.botonmilanuncios {
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
-    padding: 150px;
+    padding: 100px 20px;
 }
 
 .RRSS {
@@ -81,25 +91,21 @@ form:hover{
 
 a:link{
     transition: color 0.3s ease;
-color:rgb(153, 67, 11) ;
-text-align: center;
-cursor: pointer;
-text-decoration: none;
+    color:rgb(153, 67, 11) ;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 a:hover{
-color: cornflowerblue;
-cursor: pointer;
+    color: cornflowerblue;
+    cursor: pointer;
 }
 a:active{
-color: darkcyan;
-cursor: pointer;
+    color: darkcyan;
+    cursor: pointer;
 }
 
-ul, li{
-background-color: aqua;
-
-}
 
 table {
     width: 100%;
@@ -138,23 +144,70 @@ footer p{
     text-align: center;
 }
 
-.coche1{
-    width: 700px;
-    margin: 0 auto ;
-    height: 700px;
+
+.coche1 {
+    width: 400px;
+    margin: 0 auto;
+    height: 450px;
     padding: 18px;
     background-color: rgb(153, 67, 11);
     text-align: center;
     border-radius: 5px;
     overflow: scroll;
+    text-shadow: 3px 3px 5px rgb(44, 44, 44);
 }
 
-.trasera {
-    float: center;
+.bmwm2, .mustang, .golf2016, .golf2023, .golf2024 {
+    width: 400px;
+    height: 450px;
+    padding: 18px;
+    background-color: rgb(153, 67, 11);
+    text-align: center;
+    border-radius: 5px;
     overflow: scroll;
+    text-shadow: 3px 3px 5px rgb(44, 44, 44);
 }
 
-.delantera {
+.coche1, .bmwm2, .mustang, .golf2016, .golf2023, .golf2024:hover{
+    cursor: pointer;
+    transition: 1s;
+}
+
+.contenedor-coches {
+    display: flex;
+    gap: 40px; /* separación entre bloques */
+    justify-content: center; /* centra horizontalmente */
+    flex-wrap: wrap; /* permite que se adapten en pantallas pequeñas */
+    margin-bottom: 40px;
+}
+
+.bmwm2, .mustang, .golf2016, .golf2023, .golf2024 {
+    float: none; /* anula los float anteriores */
+    margin: 0; /* evita márgenes heredados */
+}
+
+.trasera, .delantera, .interior {
+    width: 325px;
+    height: 325px;
     float: center;
     overflow: scroll;
+    border-radius: 3px;
+
+
+}
+
+.delantera:hover, .trasera:hover, .interior:hover {
+    transform: scale(1.03); /* efecto de zoom al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* más profundidad al hacer hover */
+}
+
+
+.bmwm2, .mustang, .golf2016, .golf2023, .golf2024, .coche1 {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bmwm2:hover, .mustang:hover, .golf2016:hover, .golf2023:hover, .golf2024:hover, .coche1:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
 }
