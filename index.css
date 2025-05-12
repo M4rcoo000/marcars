@@ -26,14 +26,28 @@ position: relative;
 background-size: contain;
 background-repeat: no-repeat;
 background-position: top;
-
 min-height: 400px;
 top: 0.01px;
 position: sticky;
-
-
-
 }
+
+
+
+.textoInfo{
+    font-size: x-large;
+    text-align: justify;
+    padding: 25px;
+    margin: 30px;
+    max-width: 800px;
+    margin: 0 auto ;
+    text-align: justify;
+    line-height: 2;  
+}
+
+.listaVentajas{
+    list-style-type: circle;
+  }
+  
 
 
 form{
@@ -48,7 +62,6 @@ form:hover{
     cursor: pointer;
     transition: 2s;
 }
-
 
 .milanuncios {
     display: inline-block;
