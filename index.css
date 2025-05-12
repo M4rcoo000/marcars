@@ -1,1 +1,104 @@
 /*css for website
+
+
+.texto {
+color: chartreuse;
+
+} */
+
+/* *{
+Para seleccionar todo
+} */
+
+html {
+    font-family: "Familjen Grotesk";
+}
+
+body{
+    margin: 20px;
+    background-color: grey;
+    color: rgb(253, 237, 226);
+}
+
+header {
+background-image: url("imgs/LogoCabezera.png");
+position: relative;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+height: 200px;
+
+
+
+}
+
+.milanuncios{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(153, 67, 11) ;
+background-color:rgb(253, 237, 226);
+margin: 20px;
+padding: 15px;
+text-decoration: none;
+Text-shadow: 3px 3px 5px black; 
+}
+
+form{
+
+    background-color: red;
+    background-size: auto;
+    margin: 15px ;
+text-align: center;
+}
+
+.RRSS {
+
+    font-size: 13px;
+}
+.final {
+    font-size: 12px;
+}
+
+a:link{
+    transition: color 0.3s ease;
+color:rgb(153, 67, 11) ;
+text-align: center;
+cursor: pointer;
+text-decoration: none;
+}
+
+a:hover{
+color: cornflowerblue;
+cursor: pointer;
+}
+a:active{
+color: darkcyan;
+cursor: pointer;
+}
+
+ul, li{
+background-color: aqua;
+
+}
+
+table {
+    width: 100%;
+   border-collapse: collapse;
+   text-align: center;
+}
+
+th, td {
+    border: 1px solid  black;
+    padding: 10px;
+}
+
+footer section{
+    float: right;
+    padding: 1rem;
+}
+
+footet p{ 
+    margin: 0;
+}
+
