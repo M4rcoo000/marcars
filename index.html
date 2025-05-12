@@ -2,22 +2,21 @@
 <html lang="en">
 <head>
     <title>MARCARS</title>
-    <style>
-        table, th, td {
-            border: 1px solid  black;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="imgs/iconoWeb.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-<header>
-    <h1 id="titulo" style = "color: rgb(153, 67, 11)">MARCARS</h1>
-    <p>Venta de coches importados de alemania</p>
-    <img src="img/Logo largo.png" width="700" height="400" />
-</header>
-<div>
+    <header id="header"> 
+    </header>
+  
+<div id="cuestionario">
     <hr>
 <h1 id="preguntanos" style = "color: rgb(153, 67, 11)">PREGÚNTANOS!</h1>
-    <p>Deja cualquier duda que tengas en esta caja:</p>
+    <p class="texto">Deja cualquier duda que tengas en esta caja:</p>
     <form action="/formulario" method="POST">
         <label for="nombre">Nombre:</label>
             <input id="nombre" name="nombre" placeholder="Escriba aquí su nombre..."/><br>
@@ -29,13 +28,14 @@
         <button type="submit">Enviar</button>
     </form> 
 </div>
+
 <div>
+
+<h1 id="anuncDispon" style = "color: rgb(153, 67, 11)">ANUNCIOS DISPONIBLES</h1>
+    <p class="texto">Mira los coches que tenemos seleccionados accediendo a este link:</p>
+    <a class="milanuncios center" target="_blank" href="https://www.milanuncios.com/anuncios-usuario/marcars-236283826.htm">Ir a MILANUNCIOS</a>
 <hr>
-<h1 id="anunc.dispon" style = "color: rgb(153, 67, 11)">ANUNCIOS DISPONIBLES</h1>
-    <p>Mira los coches que tenemos seleccionados accediendo a este link:</p>
-    <a target="_blank" href="https://www.milanuncios.com/anuncios-usuario/marcars-236283826.htm">Ir a MILANUNCIOS</a>
-<hr>
-<h1 id="imp.compl" style = "color: rgb(153, 67, 11)">IMPORTACIONES COMPLETADADS</h1>
+<h1 id="impCompl" style = "color: rgb(153, 67, 11)">IMPORTACIONES COMPLETADADS</h1>
     <p>Mira los coches que hemos importado y ya han sido comprados en España:</p>
         <ul> Coches:
             <li>coche 1</li>
@@ -43,10 +43,10 @@
             <li>coche 3</li>
         </ul>
     </div>
-<footer>
 <hr>
-<h1  style = "color: rgb(153, 67, 11)">REDES SOCIALES Y CONTACTO</h1>
-    <p>Mira los coches que tenemos seleccionados accediendo a este link:</p>
+<footer>
+<h1 id="rrssyc" style = "color: rgb(153, 67, 11)">REDES SOCIALES Y CONTACTO</h1>
+<section>
     <table style="width: 500px;">
        <thead>
         <tr> 
@@ -55,7 +55,7 @@
         </tr>
   
        </thead>
-       <tbody>
+       <tbody class="RRSS">
         <tr> 
           <td>INTSAGRAM: <a target="_blank" href="https://www.instagram.com/marcars__/">@marcars__</a></td>
           <td>TELÉFONO: +34 626 774 229</td>
@@ -68,14 +68,16 @@
        <tfoot>
        </tfoot>
     </table>
+</section>
 
-    
-    <a href="#titulo">COMIENZO</a><br>
+    <div class="final">
+    <a href="#header">COMIENZO</a><br>
     <a href="#preguntanos">PREGUNTANOS!</a><br>
-    <a href="#anunc.dispon">ANUNCIOS DISPONIBLES</a><br>
-    <a href="#imp.compl">IMPORTACIONES COMPLETADAS</a><br>
+    <a href="#anuncDispon">ANUNCIOS DISPONIBLES</a><br>
+    <a href="#impCompl">IMPORTACIONES COMPLETADAS</a><br>
 
     <p>Copyright 2025</p>
+    </div>
 </footer>
 </body>
 </html>
@@ -84,5 +86,3 @@
     
     
 <!--texto que poner en el comentario--> 
-
-
